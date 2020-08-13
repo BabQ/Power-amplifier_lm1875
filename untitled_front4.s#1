@@ -5617,7 +5617,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="U2" library="Audio-Power-amlifier" deviceset="UPC1237HA" device=""/>
 <part name="D5" library="Diodes" library_urn="urn:adsk.eagle:library:11396254" deviceset="1N4007" device="" value="1N4148"/>
 <part name="K2" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="G2R2A" device="" value="12v"/>
-<part name="R25" library="OPL_Resistor" library_urn="urn:adsk.eagle:library:8004883" deviceset="DIP-RES-1M-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="12k"/>
+<part name="R25" library="OPL_Resistor" library_urn="urn:adsk.eagle:library:8004883" deviceset="DIP-RES-1M-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="15k"/>
 <part name="R27" library="OPL_Resistor" library_urn="urn:adsk.eagle:library:8004883" deviceset="DIP-RES-1M-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="8k"/>
 <part name="R28" library="OPL_Resistor" library_urn="urn:adsk.eagle:library:8004883" deviceset="DIP-RES-1M-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="200r/2w"/>
 <part name="R29" library="OPL_Resistor" library_urn="urn:adsk.eagle:library:8004883" deviceset="DIP-RES-1M-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="10k"/>
@@ -5631,7 +5631,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="C10" library="Audio-Power-amlifier" deviceset="50V100UF8X12" device="" value="100uf/50v"/>
 <part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-TRIMM" device="3296W" value="56k"/>
 <part name="C9" library="Audio-Power-amlifier" deviceset="50V100UF8X12" device="" value="100uf/50v"/>
-<part name="C14" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="ECA-1HM2R2" device="" value="4.7uf/50v"/>
+<part name="C14" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="ECA-1HM2R2" device=""/>
 <part name="R22" library="OPL_Resistor" library_urn="urn:adsk.eagle:library:8004883" deviceset="DIP-RES-1M-5%-1/4W(PR-D2.3XL6.5MM)" device="" value="1k"/>
 <part name="IC3" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM1875T" device=""/>
 <part name="SUPPLY3" library="Power_Symbols" library_urn="urn:adsk.eagle:library:16502351" deviceset="VCC" device="" value="+VCC"/>

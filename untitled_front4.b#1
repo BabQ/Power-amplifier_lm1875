@@ -2275,7 +2275,7 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="36M5257" x="81.541" y="59.856" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULARITY" value="0" x="81.541" y="59.856" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R25" library="OPL_Resistor" library_urn="urn:adsk.eagle:library:8004883" package="PR-D2.3XL6.5MM" value="12k" x="77.425" y="20.937" smashed="yes" rot="R180.2">
+<element name="R25" library="OPL_Resistor" library_urn="urn:adsk.eagle:library:8004883" package="PR-D2.3XL6.5MM" value="15k" x="77.425" y="20.937" smashed="yes" rot="R180.2">
 <attribute name="MPN" value="FHCFR-1/4W-105J" x="77.425" y="20.937" size="1.778" layer="27" rot="R180.2" display="off"/>
 <attribute name="NAME" x="80.2868625" y="21.316434375" size="0.889" layer="25" ratio="11" rot="R180.2"/>
 <attribute name="VALUE" x="76.361790625" y="21.29240625" size="0.889" layer="27" ratio="11" rot="R180.2"/>
@@ -2350,7 +2350,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="81.216" y="8.192" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="82.15515" y="3.377215625" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C14" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_RADIAL_2MM" value="4.7uf/50v" x="86.149" y="21.075" smashed="yes">
+<element name="C14" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_RADIAL_2MM" value="ECA-1HM2R2" x="86.149" y="21.075" smashed="yes">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="86.149" y="21.075" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEY_PART_NUMBER" value="P5175-ND" x="86.149" y="21.075" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="86.149" y="21.075" size="1.778" layer="27" display="off"/>
