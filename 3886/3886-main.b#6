@@ -300,8 +300,8 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 </package>
 </packages>
 </library>
-<library name="Wurth_Capacitors_WCAP-AI3H" urn="urn:adsk.eagle:library:18370781">
-<description>&lt;BR&gt;Wurth Elektronik - Capacitors - Aluminum Electrolytic Capacitors - WCAP-AI3H&lt;br&gt;&lt;Hr&gt;
+<library name="Wurth_Capacitors_WCAP-ATG5" urn="urn:adsk.eagle:library:18307966">
+<description>&lt;BR&gt;Wurth Elektronik - Capacitors - Aluminum Electrolytic Capacitors - WCAP-ATG5&lt;br&gt;&lt;Hr&gt;
 
 &lt;BR&gt;
 &lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
@@ -368,31 +368,35 @@ Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is e
 that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
 Please contact us for more information.&lt;br&gt;
 &lt;HR&gt;
-&lt;br&gt;Eagle Version 9, Library Revision 2020a, 2020-03-17&lt;br&gt;
+&lt;br&gt;Eagle Version 9, Library Revision 2020a, 2020-02-28&lt;br&gt;
 &lt;HR&gt;
 Copyright: Würth Elektronik</description>
 <packages>
-<package name="WCAP-AI3H_22X35(DXL)" urn="urn:adsk.eagle:footprint:18368013/1" library_version="2">
-<description>&lt;B&gt;WCAP-AI3H&lt;/B&gt;&lt;BR&gt; Aluminum Electrolytic Capacitors,22X35(DiameterXLength)</description>
-<pad name="1" x="5" y="0" drill="2"/>
-<pad name="2" x="-5" y="0" drill="2"/>
-<circle x="0" y="0" radius="11.1" width="0.2" layer="21"/>
-<circle x="0" y="0" radius="11" width="0.1" layer="51"/>
-<text x="0.06" y="12.13" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0.26" y="-13.2" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
-<text x="12.3" y="-0.5" size="1.27" layer="21" align="bottom-center">+</text>
-<text x="12.3" y="-0.5" size="1.27" layer="48" align="bottom-center">+</text>
+<package name="WCAP-ATG5_18X35.5(DXL)" urn="urn:adsk.eagle:footprint:18307970/1" library_version="2">
+<description>&lt;B&gt;WCAP-ATG5&lt;/B&gt;&lt;BR&gt; Aluminium Electrolytic Capacitors,18X35.5X7.5X0.8(DiameterXLengthXPitchXØPin)</description>
+<pad name="1" x="3.75" y="0" drill="1.1"/>
+<pad name="2" x="-3.75" y="0" drill="1.1"/>
+<circle x="0" y="0" radius="9.1" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="9" width="0.1" layer="51"/>
+<text x="-0.34" y="10.08" size="1.016" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="-0.24" y="-10.75" size="1.016" layer="27" align="bottom-center">&gt;VALUE</text>
+<text x="10.1" y="-0.7" size="1.016" layer="21" align="bottom-center">+</text>
+<text x="10.1" y="-0.7" size="1.016" layer="48" align="bottom-center">+</text>
 <polygon width="0.1" layer="39">
-<vertex x="0" y="-11.3" curve="-90"/>
-<vertex x="-11.3" y="0" curve="-90"/>
-<vertex x="0" y="11.3" curve="-90"/>
-<vertex x="11.3" y="0" curve="-90"/>
+<vertex x="0.2" y="-9.3"/>
+<vertex x="-0.2" y="-9.3" curve="-90"/>
+<vertex x="-9.3" y="-0.2"/>
+<vertex x="-9.3" y="0.2" curve="-90"/>
+<vertex x="-0.2" y="9.3"/>
+<vertex x="0.2" y="9.3" curve="-90"/>
+<vertex x="9.3" y="0.2"/>
+<vertex x="9.3" y="-0.2" curve="-90"/>
 </polygon>
 </package>
 </packages>
 <packages3d>
-<package3d name="WCAP-AI3H_22X35(DXL)" urn="urn:adsk.eagle:package:18368037/3" type="model" library_version="2">
-<description>&lt;B&gt;WCAP-AI3H&lt;/B&gt;&lt;BR&gt; Aluminum Electrolytic Capacitors,22X35(DiameterXLength)</description>
+<package3d name="WCAP-ATG5_18X35.5(DXL)" urn="urn:adsk.eagle:package:18307993/2" type="model" library_version="2">
+<description>&lt;B&gt;WCAP-ATG5&lt;/B&gt;&lt;BR&gt; Aluminium Electrolytic Capacitors,18X35.5X7.5X0.8(DiameterXLengthXPitchXØPin)</description>
 </package3d>
 </packages3d>
 </library>
@@ -609,20 +613,133 @@ design rules under a new name.</description>
 </element>
 <element name="U$1" library="LM3886" package="TO220-11" value="" x="23.876" y="62.992" smashed="yes"/>
 <element name="U$2" library="LM3886" package="TO220-11" value="" x="22.86" y="40.64" smashed="yes"/>
-<element name="C1" library="Wurth_Capacitors_WCAP-AI3H" library_urn="urn:adsk.eagle:library:18370781" package="WCAP-AI3H_22X35(DXL)" package3d_urn="urn:adsk.eagle:package:18368037/3" value="2200uF" x="-13.716" y="4.064" smashed="yes">
-<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/861140783006.pdf" x="-13.716" y="4.064" size="1.778" layer="27" display="off"/>
-<attribute name="DF" value="20%" x="-13.716" y="4.064" size="1.778" layer="27" display="off"/>
-<attribute name="DIAMETER" value="22mm" x="-13.716" y="4.064" size="1.778" layer="27" display="off"/>
-<attribute name="I-LEAK" value="1116.87uA" x="-13.716" y="4.064" size="1.778" layer="27" display="off"/>
-<attribute name="I-RIPPLE" value="1820mA" x="-13.716" y="4.064" size="1.778" layer="27" display="off"/>
-<attribute name="L" value="35mm" x="-13.716" y="4.064" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-13.656" y="16.194" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="OPERATING-TEMPERATURE" value="- 40°C  up to+105°C" x="-13.716" y="4.064" size="1.778" layer="27" display="off"/>
-<attribute name="PART-NUMBER" value=" 861140783006 " x="-13.716" y="4.064" size="1.778" layer="27" display="off"/>
-<attribute name="PITCH" value="10mm" x="-13.716" y="4.064" size="1.778" layer="27" display="off"/>
-<attribute name="TECHNICAL-REFERENCE" value="ANDN350222M063DSIC3C000" x="-13.716" y="4.064" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-13.456" y="-9.136" size="1.27" layer="27" align="bottom-center"/>
-<attribute name="VR" value="63V(DC)" x="-13.716" y="4.064" size="1.778" layer="27" display="off"/>
+<element name="C1" library="Wurth_Capacitors_WCAP-ATG5" library_urn="urn:adsk.eagle:library:18307966" package="WCAP-ATG5_18X35.5(DXL)" package3d_urn="urn:adsk.eagle:package:18307993/2" value="3300  µF " x="-11.176" y="1.524" smashed="yes">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860020681032.pdf" x="-11.176" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DF" value="10%" x="-11.176" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DIAMETER" value="18mm" x="-11.176" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-LEAK" value="1650uA" x="-11.176" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-RIPPLE" value="1750mA" x="-11.176" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="L" value="35.5mm" x="-11.176" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-11.516" y="11.604" size="1.016" layer="25" align="bottom-center"/>
+<attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="-11.176" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PART-NUMBER" value=" 860020681032 " x="-11.176" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PITCH" value="7.5mm" x="-11.176" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="TECHNICAL-REFERENCE" value="ATDL355332M050DSPAEB000" x="-11.176" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-11.416" y="-9.226" size="1.016" layer="27" align="bottom-center"/>
+<attribute name="VR" value="50V(DC)" x="-11.176" y="1.524" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C2" library="Wurth_Capacitors_WCAP-ATG5" library_urn="urn:adsk.eagle:library:18307966" package="WCAP-ATG5_18X35.5(DXL)" package3d_urn="urn:adsk.eagle:package:18307993/2" value="3300  µF " x="-31.496" y="1.524" smashed="yes">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860020681032.pdf" x="-31.496" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DF" value="10%" x="-31.496" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DIAMETER" value="18mm" x="-31.496" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-LEAK" value="1650uA" x="-31.496" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-RIPPLE" value="1750mA" x="-31.496" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="L" value="35.5mm" x="-31.496" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-31.836" y="11.604" size="1.016" layer="25" align="bottom-center"/>
+<attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="-31.496" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PART-NUMBER" value=" 860020681032 " x="-31.496" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PITCH" value="7.5mm" x="-31.496" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="TECHNICAL-REFERENCE" value="ATDL355332M050DSPAEB000" x="-31.496" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-31.736" y="-9.226" size="1.016" layer="27" align="bottom-center"/>
+<attribute name="VR" value="50V(DC)" x="-31.496" y="1.524" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C3" library="Wurth_Capacitors_WCAP-ATG5" library_urn="urn:adsk.eagle:library:18307966" package="WCAP-ATG5_18X35.5(DXL)" package3d_urn="urn:adsk.eagle:package:18307993/2" value="3300  µF " x="-51.816" y="1.524" smashed="yes">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860020681032.pdf" x="-51.816" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DF" value="10%" x="-51.816" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DIAMETER" value="18mm" x="-51.816" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-LEAK" value="1650uA" x="-51.816" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-RIPPLE" value="1750mA" x="-51.816" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="L" value="35.5mm" x="-51.816" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-52.156" y="11.604" size="1.016" layer="25" align="bottom-center"/>
+<attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="-51.816" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PART-NUMBER" value=" 860020681032 " x="-51.816" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PITCH" value="7.5mm" x="-51.816" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="TECHNICAL-REFERENCE" value="ATDL355332M050DSPAEB000" x="-51.816" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-52.056" y="-9.226" size="1.016" layer="27" align="bottom-center"/>
+<attribute name="VR" value="50V(DC)" x="-51.816" y="1.524" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C4" library="Wurth_Capacitors_WCAP-ATG5" library_urn="urn:adsk.eagle:library:18307966" package="WCAP-ATG5_18X35.5(DXL)" package3d_urn="urn:adsk.eagle:package:18307993/2" value="3300  µF " x="-72.136" y="1.524" smashed="yes">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860020681032.pdf" x="-72.136" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DF" value="10%" x="-72.136" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DIAMETER" value="18mm" x="-72.136" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-LEAK" value="1650uA" x="-72.136" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-RIPPLE" value="1750mA" x="-72.136" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="L" value="35.5mm" x="-72.136" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-72.476" y="11.604" size="1.016" layer="25" align="bottom-center"/>
+<attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="-72.136" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PART-NUMBER" value=" 860020681032 " x="-72.136" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PITCH" value="7.5mm" x="-72.136" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="TECHNICAL-REFERENCE" value="ATDL355332M050DSPAEB000" x="-72.136" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-72.376" y="-9.226" size="1.016" layer="27" align="bottom-center"/>
+<attribute name="VR" value="50V(DC)" x="-72.136" y="1.524" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C5" library="Wurth_Capacitors_WCAP-ATG5" library_urn="urn:adsk.eagle:library:18307966" package="WCAP-ATG5_18X35.5(DXL)" package3d_urn="urn:adsk.eagle:package:18307993/2" value="3300  µF " x="-92.456" y="1.524" smashed="yes">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860020681032.pdf" x="-92.456" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DF" value="10%" x="-92.456" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DIAMETER" value="18mm" x="-92.456" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-LEAK" value="1650uA" x="-92.456" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-RIPPLE" value="1750mA" x="-92.456" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="L" value="35.5mm" x="-92.456" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-92.796" y="11.604" size="1.016" layer="25" align="bottom-center"/>
+<attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="-92.456" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PART-NUMBER" value=" 860020681032 " x="-92.456" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PITCH" value="7.5mm" x="-92.456" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="TECHNICAL-REFERENCE" value="ATDL355332M050DSPAEB000" x="-92.456" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-92.696" y="-9.226" size="1.016" layer="27" align="bottom-center"/>
+<attribute name="VR" value="50V(DC)" x="-92.456" y="1.524" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C6" library="Wurth_Capacitors_WCAP-ATG5" library_urn="urn:adsk.eagle:library:18307966" package="WCAP-ATG5_18X35.5(DXL)" package3d_urn="urn:adsk.eagle:package:18307993/2" value="3300  µF " x="-112.776" y="1.524" smashed="yes">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860020681032.pdf" x="-112.776" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DF" value="10%" x="-112.776" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DIAMETER" value="18mm" x="-112.776" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-LEAK" value="1650uA" x="-112.776" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-RIPPLE" value="1750mA" x="-112.776" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="L" value="35.5mm" x="-112.776" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-113.116" y="11.604" size="1.016" layer="25" align="bottom-center"/>
+<attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="-112.776" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PART-NUMBER" value=" 860020681032 " x="-112.776" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PITCH" value="7.5mm" x="-112.776" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="TECHNICAL-REFERENCE" value="ATDL355332M050DSPAEB000" x="-112.776" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-113.016" y="-9.226" size="1.016" layer="27" align="bottom-center"/>
+<attribute name="VR" value="50V(DC)" x="-112.776" y="1.524" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C7" library="Wurth_Capacitors_WCAP-ATG5" library_urn="urn:adsk.eagle:library:18307966" package="WCAP-ATG5_18X35.5(DXL)" package3d_urn="urn:adsk.eagle:package:18307993/2" value="3300  µF " x="-133.096" y="1.524" smashed="yes">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860020681032.pdf" x="-133.096" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DF" value="10%" x="-133.096" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DIAMETER" value="18mm" x="-133.096" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-LEAK" value="1650uA" x="-133.096" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-RIPPLE" value="1750mA" x="-133.096" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="L" value="35.5mm" x="-133.096" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-133.436" y="11.604" size="1.016" layer="25" align="bottom-center"/>
+<attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="-133.096" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PART-NUMBER" value=" 860020681032 " x="-133.096" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PITCH" value="7.5mm" x="-133.096" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="TECHNICAL-REFERENCE" value="ATDL355332M050DSPAEB000" x="-133.096" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-133.336" y="-9.226" size="1.016" layer="27" align="bottom-center"/>
+<attribute name="VR" value="50V(DC)" x="-133.096" y="1.524" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C8" library="Wurth_Capacitors_WCAP-ATG5" library_urn="urn:adsk.eagle:library:18307966" package="WCAP-ATG5_18X35.5(DXL)" package3d_urn="urn:adsk.eagle:package:18307993/2" value="3300  µF " x="-153.416" y="1.524" smashed="yes">
+<attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860020681032.pdf" x="-153.416" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DF" value="10%" x="-153.416" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="DIAMETER" value="18mm" x="-153.416" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-LEAK" value="1650uA" x="-153.416" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="I-RIPPLE" value="1750mA" x="-153.416" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="L" value="35.5mm" x="-153.416" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-153.756" y="11.604" size="1.016" layer="25" align="bottom-center"/>
+<attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="-153.416" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PART-NUMBER" value=" 860020681032 " x="-153.416" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="PITCH" value="7.5mm" x="-153.416" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="TECHNICAL-REFERENCE" value="ATDL355332M050DSPAEB000" x="-153.416" y="1.524" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-153.656" y="-9.226" size="1.016" layer="27" align="bottom-center"/>
+<attribute name="VR" value="50V(DC)" x="-153.416" y="1.524" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J1" library="Terminal Blocks" library_urn="urn:adsk.eagle:library:11886498" package="TERMINALBLOCK_PLUGGABLE-3-7.62MM" value="audio_output" x="-150.876" y="-19.304" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="-150.876" y="-19.304" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NO" value="732-2824-ND" x="-150.876" y="-19.304" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="WURTH ELEKTRONIK" x="-150.876" y="-19.304" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="691311400103" x="-150.876" y="-19.304" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-161.606" y="-13.034" size="1.778" layer="25"/>
+<attribute name="VALUE" x="-162.146" y="-26.464" size="1.778" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -645,6 +762,44 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="5"/>
 <contactref element="U$2" pad="5"/>
 <wire x1="22.098" y1="60.452" x2="21.082" y2="38.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$1">
+<contactref element="C1" pad="2"/>
+<contactref element="C5" pad="1"/>
+<wire x1="-14.926" y1="1.524" x2="-88.706" y2="1.524" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2">
+<contactref element="C2" pad="2"/>
+<contactref element="C6" pad="1"/>
+<wire x1="-35.246" y1="1.524" x2="-109.026" y2="1.524" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="C3" pad="2"/>
+<contactref element="C7" pad="1"/>
+<wire x1="-55.566" y1="1.524" x2="-129.346" y2="1.524" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="C8" pad="1"/>
+<contactref element="C4" pad="2"/>
+<wire x1="-75.886" y1="1.524" x2="-149.666" y2="1.524" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="C4" pad="1"/>
+<contactref element="C3" pad="1"/>
+<contactref element="C2" pad="1"/>
+<contactref element="C1" pad="1"/>
+<wire x1="-48.066" y1="1.524" x2="-68.386" y2="1.524" width="0" layer="19" extent="1-1"/>
+<wire x1="-27.746" y1="1.524" x2="-48.066" y2="1.524" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.426" y1="1.524" x2="-27.746" y2="1.524" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$6">
+<contactref element="C5" pad="2"/>
+<contactref element="C6" pad="2"/>
+<contactref element="C7" pad="2"/>
+<contactref element="C8" pad="2"/>
+<wire x1="-136.846" y1="1.524" x2="-157.166" y2="1.524" width="0" layer="19" extent="1-1"/>
+<wire x1="-116.526" y1="1.524" x2="-136.846" y2="1.524" width="0" layer="19" extent="1-1"/>
+<wire x1="-96.206" y1="1.524" x2="-116.526" y2="1.524" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
