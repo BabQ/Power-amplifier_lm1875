@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="8.2.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -54,8 +53,8 @@
 <layer number="58" name="bCAD" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
-<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -655,14 +654,10 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
-<param name="checkStop" value="0"/>
-<param name="checkValues" value="0"/>
-<param name="checkNames" value="1"/>
-<param name="checkWireStubs" value="1"/>
-<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -763,257 +758,209 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="Terminal Blocks" library_urn="urn:adsk.eagle:library:11886498" package="TERMINALBLOCK_PLUGGABLE-3-7.62MM" value="in_+-25v" x="16.637" y="48.133" smashed="yes">
+<element name="J1" library="Terminal Blocks" library_urn="urn:adsk.eagle:library:11886498" package="TERMINALBLOCK_PLUGGABLE-3-7.62MM" value="in_+-25v" x="16.637" y="48.133">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="16.637" y="48.133" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEY_PART_NO" value="732-2824-ND" x="16.637" y="48.133" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="WURTH ELEKTRONIK" x="16.637" y="48.133" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="691311400103" x="16.637" y="48.133" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="5.907" y="54.403" size="1.778" layer="25"/>
-<attribute name="VALUE" x="5.367" y="40.973" size="1.778" layer="27"/>
 </element>
-<element name="J2" library="Terminal Blocks" library_urn="urn:adsk.eagle:library:11886498" package="TERMINALBLOCK_PLUGGABLE-3-7.62MM" value="out_+-25v" x="94.742" y="13.462" smashed="yes" rot="R90">
+<element name="J2" library="Terminal Blocks" library_urn="urn:adsk.eagle:library:11886498" package="TERMINALBLOCK_PLUGGABLE-3-7.62MM" value="out_+-25v" x="94.742" y="13.462" rot="R90">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="94.742" y="13.462" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIGIKEY_PART_NO" value="732-2824-ND" x="94.742" y="13.462" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="WURTH ELEKTRONIK" x="94.742" y="13.462" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="691311400103" x="94.742" y="13.462" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="88.472" y="2.732" size="1.778" layer="25" rot="R90"/>
-<attribute name="VALUE" x="101.902" y="2.192" size="1.778" layer="27" rot="R90"/>
 </element>
-<element name="C1" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="80.01" y="28.321" smashed="yes" rot="R90">
+<element name="C1" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="80.01" y="28.321" rot="R90">
 <attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860241081001.pdf" x="80.01" y="28.321" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DF" value="15%" x="80.01" y="28.321" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIAMETER" value="18mm" x="80.01" y="28.321" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-LEAK" value="2740uA" x="80.01" y="28.321" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-RIPPLE" value="3220mA" x="80.01" y="28.321" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="L" value="35.5mm" x="80.01" y="28.321" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="69.93" y="27.981" size="1.016" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="80.01" y="28.321" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART-NUMBER" value=" 860241081001 " x="80.01" y="28.321" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PITCH" value="7.5mm" x="80.01" y="28.321" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TECHNICAL-REFERENCE" value="ATJL355331M200DSPAEK000" x="80.01" y="28.321" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="90.76" y="28.081" size="1.016" layer="27" rot="R90" align="bottom-center"/>
 <attribute name="VR" value="200V(DC)" x="80.01" y="28.321" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C2" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="60.833" y="28.448" smashed="yes" rot="R90">
+<element name="C2" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="60.833" y="28.448" rot="R90">
 <attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860241081001.pdf" x="60.833" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DF" value="15%" x="60.833" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIAMETER" value="18mm" x="60.833" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-LEAK" value="2740uA" x="60.833" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-RIPPLE" value="3220mA" x="60.833" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="L" value="35.5mm" x="60.833" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="50.753" y="28.108" size="1.016" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="60.833" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART-NUMBER" value=" 860241081001 " x="60.833" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PITCH" value="7.5mm" x="60.833" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TECHNICAL-REFERENCE" value="ATJL355331M200DSPAEK000" x="60.833" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="71.583" y="28.208" size="1.016" layer="27" rot="R90" align="bottom-center"/>
 <attribute name="VR" value="200V(DC)" x="60.833" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C3" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="41.91" y="28.448" smashed="yes" rot="R90">
+<element name="C3" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="41.91" y="28.448" rot="R90">
 <attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860241081001.pdf" x="41.91" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DF" value="15%" x="41.91" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIAMETER" value="18mm" x="41.91" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-LEAK" value="2740uA" x="41.91" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-RIPPLE" value="3220mA" x="41.91" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="L" value="35.5mm" x="41.91" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="31.83" y="28.108" size="1.016" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="41.91" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART-NUMBER" value=" 860241081001 " x="41.91" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PITCH" value="7.5mm" x="41.91" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TECHNICAL-REFERENCE" value="ATJL355331M200DSPAEK000" x="41.91" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="52.66" y="28.208" size="1.016" layer="27" rot="R90" align="bottom-center"/>
 <attribute name="VR" value="200V(DC)" x="41.91" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C4" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="22.987" y="28.448" smashed="yes" rot="R90">
+<element name="C4" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="22.987" y="28.448" rot="R90">
 <attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860241081001.pdf" x="22.987" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DF" value="15%" x="22.987" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIAMETER" value="18mm" x="22.987" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-LEAK" value="2740uA" x="22.987" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-RIPPLE" value="3220mA" x="22.987" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="L" value="35.5mm" x="22.987" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="12.907" y="28.108" size="1.016" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="22.987" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART-NUMBER" value=" 860241081001 " x="22.987" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PITCH" value="7.5mm" x="22.987" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TECHNICAL-REFERENCE" value="ATJL355331M200DSPAEK000" x="22.987" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="33.737" y="28.208" size="1.016" layer="27" rot="R90" align="bottom-center"/>
 <attribute name="VR" value="200V(DC)" x="22.987" y="28.448" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C6" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="42.291" y="9.398" smashed="yes" rot="R90">
+<element name="C6" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="42.291" y="9.398" rot="R90">
 <attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860241081001.pdf" x="42.291" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DF" value="15%" x="42.291" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIAMETER" value="18mm" x="42.291" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-LEAK" value="2740uA" x="42.291" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-RIPPLE" value="3220mA" x="42.291" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="L" value="35.5mm" x="42.291" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="32.211" y="9.058" size="1.016" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="42.291" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART-NUMBER" value=" 860241081001 " x="42.291" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PITCH" value="7.5mm" x="42.291" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TECHNICAL-REFERENCE" value="ATJL355331M200DSPAEK000" x="42.291" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="53.041" y="9.158" size="1.016" layer="27" rot="R90" align="bottom-center"/>
 <attribute name="VR" value="200V(DC)" x="42.291" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C7" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="23.368" y="9.525" smashed="yes" rot="R90">
+<element name="C7" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="23.368" y="9.525" rot="R90">
 <attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860241081001.pdf" x="46.228" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DF" value="15%" x="46.228" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIAMETER" value="18mm" x="46.228" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-LEAK" value="2740uA" x="46.228" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-RIPPLE" value="3220mA" x="46.228" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="L" value="35.5mm" x="46.228" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="13.288" y="9.185" size="1.016" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="46.228" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART-NUMBER" value=" 860241081001 " x="46.228" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PITCH" value="7.5mm" x="46.228" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TECHNICAL-REFERENCE" value="ATJL355331M200DSPAEK000" x="46.228" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="34.118" y="9.285" size="1.016" layer="27" rot="R90" align="bottom-center"/>
 <attribute name="VR" value="200V(DC)" x="46.228" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C8" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="61.214" y="9.525" smashed="yes" rot="R90">
+<element name="C8" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="61.214" y="9.525" rot="R90">
 <attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860241081001.pdf" x="84.074" y="9.525" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DF" value="15%" x="84.074" y="9.525" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIAMETER" value="18mm" x="84.074" y="9.525" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-LEAK" value="2740uA" x="84.074" y="9.525" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-RIPPLE" value="3220mA" x="84.074" y="9.525" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="L" value="35.5mm" x="84.074" y="9.525" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="51.134" y="9.185" size="1.016" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="84.074" y="9.525" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART-NUMBER" value=" 860241081001 " x="84.074" y="9.525" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PITCH" value="7.5mm" x="84.074" y="9.525" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TECHNICAL-REFERENCE" value="ATJL355331M200DSPAEK000" x="84.074" y="9.525" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="71.964" y="9.285" size="1.016" layer="27" rot="R90" align="bottom-center"/>
 <attribute name="VR" value="200V(DC)" x="84.074" y="9.525" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C9" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="80.137" y="9.525" smashed="yes" rot="R90">
+<element name="C9" library="Wurth_Capacitors_WCAP-AT1H" library_urn="urn:adsk.eagle:library:18308997" package="WCAP-AT1H_18X35.5(DXL)" value="330  µF " x="80.137" y="9.525" rot="R90">
 <attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860241081001.pdf" x="125.857" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DF" value="15%" x="125.857" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIAMETER" value="18mm" x="125.857" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-LEAK" value="2740uA" x="125.857" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-RIPPLE" value="3220mA" x="125.857" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="L" value="35.5mm" x="125.857" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="70.057" y="9.185" size="1.016" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING-TEMPERATURE" value="-25 °C up to +105 °C" x="125.857" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART-NUMBER" value=" 860241081001 " x="125.857" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PITCH" value="7.5mm" x="125.857" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TECHNICAL-REFERENCE" value="ATJL355331M200DSPAEK000" x="125.857" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="90.887" y="9.285" size="1.016" layer="27" rot="R90" align="bottom-center"/>
 <attribute name="VR" value="200V(DC)" x="125.857" y="-14.605" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C5" library="Wurth_Capacitors_WCAP-ATET" library_urn="urn:adsk.eagle:library:18309204" package="WCAP-ATET_10X25(DXL)" value="1000  µF " x="64.262" y="48.895" smashed="yes" rot="R90">
+<element name="C5" library="Wurth_Capacitors_WCAP-ATET" library_urn="urn:adsk.eagle:library:18309204" package="WCAP-ATET_10X25(DXL)" value="1000  µF " x="64.262" y="48.895" rot="R90">
 <attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860130375008.pdf" x="64.262" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DF" value="15%" x="64.262" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIAMETER" value="10mm" x="64.262" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-LEAK" value="160uA" x="64.262" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-RIPPLE" value="950mA" x="64.262" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="L" value="25mm" x="64.262" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="58.282" y="48.755" size="1.016" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING-TEMPERATURE" value="-40 °C up to +125 °C" x="64.262" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART-NUMBER" value=" 860130375008 " x="64.262" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PITCH" value="5mm" x="64.262" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TECHNICAL-REFERENCE" value="ATGF250102M016DSPAAB000" x="64.262" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="71.012" y="48.855" size="1.016" layer="27" rot="R90" align="bottom-center"/>
 <attribute name="VR" value="16V(DC)" x="64.262" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C10" library="Wurth_Capacitors_WCAP-ATET" library_urn="urn:adsk.eagle:library:18309204" package="WCAP-ATET_10X25(DXL)" value="1000  µF " x="75.184" y="48.895" smashed="yes" rot="R90">
+<element name="C10" library="Wurth_Capacitors_WCAP-ATET" library_urn="urn:adsk.eagle:library:18309204" package="WCAP-ATET_10X25(DXL)" value="1000  µF " x="75.184" y="48.895" rot="R90">
 <attribute name="DATASHEET-URL" value="https://www.we-online.com/catalog/datasheet/860130375008.pdf" x="75.184" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DF" value="15%" x="75.184" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIAMETER" value="10mm" x="75.184" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-LEAK" value="160uA" x="75.184" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="I-RIPPLE" value="950mA" x="75.184" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="L" value="25mm" x="75.184" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="69.204" y="48.755" size="1.016" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="OPERATING-TEMPERATURE" value="-40 °C up to +125 °C" x="75.184" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART-NUMBER" value=" 860130375008 " x="75.184" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PITCH" value="5mm" x="75.184" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TECHNICAL-REFERENCE" value="ATGF250102M016DSPAAB000" x="75.184" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="81.934" y="48.855" size="1.016" layer="27" rot="R90" align="bottom-center"/>
 <attribute name="VR" value="16V(DC)" x="75.184" y="48.895" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="B1" library="rectifier" package="GBJ" value="GBJ25" x="9.652" y="19.05" smashed="yes" rot="R270">
-<attribute name="NAME" x="12.7095" y="33.9725" size="1.016" layer="25" ratio="18" rot="R270"/>
-<attribute name="SPICEPREFIX" value="E" x="9.652" y="19.05" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="6.042" y="33.9725" size="0.8128" layer="27" ratio="10" rot="R270"/>
-</element>
-<element name="J5" library="Connectors" library_urn="urn:adsk.eagle:library:14555660" package="HDR-02" value="in_12v" x="40.767" y="50.165" smashed="yes" rot="R90">
+<element name="B1" library="rectifier" package="GBJ" value="GBJ25" x="9.652" y="19.05" rot="R270"/>
+<element name="J5" library="Connectors" library_urn="urn:adsk.eagle:library:14555660" package="HDR-02" value="in_12v" x="40.767" y="50.165" rot="R90">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="40.767" y="50.165" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIGIKEY_PART_NUMBER" value="455-1639-ND" x="40.767" y="50.165" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="JST Sales America Inc." x="40.767" y="50.165" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="B2P-VH(LF)(SN)" x="40.767" y="50.165" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="38.227" y="46.355" size="1.27" layer="25" rot="R90"/>
-<attribute name="VALUE" x="49.657" y="46.355" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="J6" library="Connectors" library_urn="urn:adsk.eagle:library:14555660" package="HDR-02" value="out_12v" x="90.17" y="49.784" smashed="yes" rot="R270">
+<element name="J6" library="Connectors" library_urn="urn:adsk.eagle:library:14555660" package="HDR-02" value="out_12v" x="90.17" y="49.784" rot="R270">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="90.17" y="49.784" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIGIKEY_PART_NUMBER" value="455-1639-ND" x="90.17" y="49.784" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="JST Sales America Inc." x="90.17" y="49.784" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="B2P-VH(LF)(SN)" x="90.17" y="49.784" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="92.71" y="53.594" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="81.28" y="53.594" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="D1" library="Diodes" library_urn="urn:adsk.eagle:library:11396254" package="DO-41" value="1N4007" x="53.086" y="52.832" smashed="yes" rot="R180">
+<element name="D1" library="Diodes" library_urn="urn:adsk.eagle:library:11396254" package="DO-41" value="1N4007" x="53.086" y="52.832" rot="R180">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="53.086" y="52.832" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIGIKEY_PART_NUMBER" value="1N4007MSCT-ND" x="53.086" y="52.832" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Micro Commercial Co" x="53.086" y="52.832" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="1N4007" x="53.086" y="52.832" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="58.586" y="51.082" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="PACKAGE" value="DO-41" x="53.086" y="52.832" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="58.586" y="55.832" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="D2" library="Diodes" library_urn="urn:adsk.eagle:library:11396254" package="DO-41" value="1N4007" x="53.086" y="49.784" smashed="yes" rot="R180">
+<element name="D2" library="Diodes" library_urn="urn:adsk.eagle:library:11396254" package="DO-41" value="1N4007" x="53.086" y="49.784" rot="R180">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="53.086" y="49.784" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIGIKEY_PART_NUMBER" value="1N4007MSCT-ND" x="53.086" y="49.784" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Micro Commercial Co" x="53.086" y="49.784" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="1N4007" x="53.086" y="49.784" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="58.586" y="48.034" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="PACKAGE" value="DO-41" x="53.086" y="49.784" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="58.586" y="52.784" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="D3" library="Diodes" library_urn="urn:adsk.eagle:library:11396254" package="DO-41" value="1N4007" x="53.086" y="46.736" smashed="yes">
+<element name="D3" library="Diodes" library_urn="urn:adsk.eagle:library:11396254" package="DO-41" value="1N4007" x="53.086" y="46.736">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="53.086" y="46.736" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEY_PART_NUMBER" value="1N4007MSCT-ND" x="53.086" y="46.736" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Micro Commercial Co" x="53.086" y="46.736" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="1N4007" x="53.086" y="46.736" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="47.586" y="48.486" size="1.27" layer="25" ratio="10"/>
 <attribute name="PACKAGE" value="DO-41" x="53.086" y="46.736" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="47.586" y="43.736" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="D4" library="Diodes" library_urn="urn:adsk.eagle:library:11396254" package="DO-41" value="1N4007" x="53.086" y="43.688" smashed="yes">
+<element name="D4" library="Diodes" library_urn="urn:adsk.eagle:library:11396254" package="DO-41" value="1N4007" x="53.086" y="43.688">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="53.086" y="43.688" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEY_PART_NUMBER" value="1N4007MSCT-ND" x="53.086" y="43.688" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Micro Commercial Co" x="53.086" y="43.688" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="1N4007" x="53.086" y="43.688" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="47.586" y="45.438" size="1.27" layer="25" ratio="10"/>
 <attribute name="PACKAGE" value="DO-41" x="53.086" y="43.688" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="47.586" y="40.688" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="R1" library="OPL_Resistor" library_urn="urn:adsk.eagle:library:8004883" package="PR-D2.3XL6.5MM" value="5k" x="72.517" y="42.164" smashed="yes">
+<element name="R1" library="OPL_Resistor" library_urn="urn:adsk.eagle:library:8004883" package="PR-D2.3XL6.5MM" value="5k" x="72.517" y="42.164">
 <attribute name="MPN" value="FHCFR-1/4W-105J" x="72.517" y="42.164" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="70.104" y="43.561" size="0.889" layer="25" ratio="11"/>
-<attribute name="VALUE" x="70.104" y="39.243" size="0.889" layer="27" ratio="11"/>
 </element>
-<element name="J3" library="Headers" library_urn="urn:adsk.eagle:library:11687645" package="61300211121" value="LED" x="98.171" y="42.037" smashed="yes">
+<element name="J3" library="Headers" library_urn="urn:adsk.eagle:library:11687645" package="61300211121" value="LED" x="98.171" y="42.037">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="98.171" y="42.037" size="1.778" layer="27" display="off"/>
 <attribute name="DIGI_KEY_PART_NUMBER" value="732-5315-ND" x="98.171" y="42.037" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Wurth Electronics Inc." x="98.171" y="42.037" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="61300211121" x="98.171" y="42.037" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="94.869" y="44.196" size="1.27" layer="25"/>
-<attribute name="VALUE" x="94.869" y="38.354" size="1.27" layer="27"/>
 </element>
-<element name="J4" library="Connectors" library_urn="urn:adsk.eagle:library:14555660" package="HDR-02" value="out_12v" x="99.441" y="49.784" smashed="yes" rot="R270">
+<element name="J4" library="Connectors" library_urn="urn:adsk.eagle:library:14555660" package="HDR-02" value="out_12v" x="99.441" y="49.784" rot="R270">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="99.441" y="49.784" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIGIKEY_PART_NUMBER" value="455-1639-ND" x="99.441" y="49.784" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="JST Sales America Inc." x="99.441" y="49.784" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="B2P-VH(LF)(SN)" x="99.441" y="49.784" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="101.981" y="53.594" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="90.551" y="53.594" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="J7" library="Connectors" library_urn="urn:adsk.eagle:library:14555660" package="HDR-02" value="out_12v" x="33.147" y="45.974" smashed="yes" rot="R180">
+<element name="J7" library="Connectors" library_urn="urn:adsk.eagle:library:14555660" package="HDR-02" value="out_12v" x="33.147" y="45.974" rot="R180">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="33.147" y="45.974" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIGIKEY_PART_NUMBER" value="455-1639-ND" x="33.147" y="45.974" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="JST Sales America Inc." x="33.147" y="45.974" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="B2P-VH(LF)(SN)" x="33.147" y="45.974" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="36.957" y="43.434" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="36.957" y="54.864" size="1.27" layer="27" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -1207,18 +1154,11 @@ design rules under a new name.</description>
 <wire x1="96.774" y1="42.164" x2="96.901" y2="42.037" width="1.778" layer="16"/>
 </signal>
 </signals>
-<mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
-<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
-<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
-<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
-<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
-</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>
 <note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
+Since Version 8.2, Eagle supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
 </note>
